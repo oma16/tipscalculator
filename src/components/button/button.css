@@ -1,0 +1,27 @@
+.btn{
+    width: 117px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #00474B;
+    border: #00474B;
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.btn:hover {
+    background: #9FE8DF;
+    cursor: pointer;
+    color: #00474B;
+}
+
+@media  only screen and (max-width:780px){
+    .btn {
+        width: 146.631px;
+
+    }
+}
