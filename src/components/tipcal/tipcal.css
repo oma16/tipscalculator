@@ -161,7 +161,14 @@
     font-weight: 700;
     line-height: normal;
 }
-
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: o;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
 .tip-btn{
     width: 379px;
     height: 112px;

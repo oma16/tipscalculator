@@ -52,7 +52,7 @@ const Tipcal = () => {
                 <div className='box'>
                   <div className='billInput'>
                     <label htmlFor="bill" className='bill'>Bill</label>
-                    <input type="text" inputMode='numeric' value={bill} onChange={(e)=>{setBill(e.target.value)}} required className='input0' placeholder='0'/>
+                    <input type="number" value={bill} onChange={(e)=>{setBill(e.target.value)}} required className='input0' placeholder='0'/>
                     <img src={dollar} alt="dollar" className='dollar' />
                   </div>
                   <div className='select'>  
@@ -63,14 +63,14 @@ const Tipcal = () => {
                         <Button className='btn' value={15/100} label={15} handleClick={handleClick}/>
                         <Button className='btn' value={25/100} label={25} handleClick={handleClick}/>
                         <Button className='btn' value={50/100} label={50} handleClick={handleClick}/>
-                        <input type="text" inputMode='numeric' value={custom} className='custom' required onChange={(e)=>{setCustom(e.target.value)}} placeholder='Custom'/>
+                        <input type="number" value={custom} className='custom' required onChange={(e)=>{setCustom(e.target.value)}} placeholder='Custom'/>
                        
                       </div>
                   </div>
                   <div className="billInput">
                     <label htmlFor="Number of People" className='bill'><span>Number of People</span> <span className={(+persons >= 1 || persons === "") ? "person1" : "person0"}>Can’t be zero</span></label>
                     
-                    <input type="text" inputMode='numeric' value={persons} onChange={(e)=>{setPersons(e.target.value)}} required className={(+persons >= 1 || persons === "")  ? "input0" : "input1" } placeholder='0'/>
+                    <input type="number"  value={persons} onChange={(e)=>{setPersons(e.target.value)}} required className={(+persons >= 1 || persons === "")  ? "input0" : "input1" } placeholder='0'/>
                     <img src={shape} alt="icon" className='shape'/>
                   </div>
                 </div>
