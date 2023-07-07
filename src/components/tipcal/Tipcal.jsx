@@ -26,6 +26,7 @@ const Tipcal = () => {
            setPersons("");
            setValue("");
           setBill("");
+          setCustom("")
           setTip(0);
           setTotal(0);
   }
