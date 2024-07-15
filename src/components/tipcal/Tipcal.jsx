@@ -31,12 +31,12 @@ const Tipcal = () => {
           setTotal(0);
   }
   useEffect(() => {
-      if(value){
+      if(value && bill && persons){
         let tipValue = (+bill / +persons) * +value;
         setTip(tipValue);
         let totalValue = (+bill + (tipValue * +persons)) / +persons;
         setTotal(totalValue);
-      }else if(custom){
+      }else if(custom && bill && persons){
         let tipCustom = (+bill / +persons) * (+custom / 100 );
         setTip(tipCustom);
         let totalValue = (+bill + (tipCustom * +persons)) / +persons;

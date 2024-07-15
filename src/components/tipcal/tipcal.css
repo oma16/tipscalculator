@@ -167,7 +167,7 @@ input::-webkit-inner-spin-button{
     margin: o;
 }
 input[type=number] {
-    -moz-appearance: textfield;
+    appearance: textfield;
 }
 .tip-btn{
     width: 379px;
